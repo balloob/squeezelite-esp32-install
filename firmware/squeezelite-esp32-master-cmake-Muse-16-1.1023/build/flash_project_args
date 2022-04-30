@@ -1,0 +1,6 @@
+--flash_mode dio --flash_freq 80m --flash_size 4MB
+0x8000 partition_table/partition-table.bin
+0xd000 ota_data_initial.bin
+0x1000 bootloader/bootloader.bin
+0x10000 recovery.bin
+0x150000 squeezelite.bin

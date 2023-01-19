@@ -1,0 +1,12 @@
+{
+  "name": "Squeezelite Muse Luxe",
+  "version": "Muse-16 2.1254",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "./luxe_squeezelite.bin", "offset": 0}
+      ]
+    }
+  ]
+}

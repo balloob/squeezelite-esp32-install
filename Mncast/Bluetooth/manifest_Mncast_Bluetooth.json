@@ -1,0 +1,19 @@
+{
+  "name": "Simple Bluetooth for Manga Cast",
+  "version": "1.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "./mncast_bluetooth1.bin", "offset": 0},
+	{ "path": "./mncast_bluetooth2.bin", "offset": 524288},
+ 	{ "path": "./mncast_bluetooth3.bin", "offset": 1048576},
+ 	{ "path": "./mncast_bluetooth4.bin", "offset": 1572864},
+ 	{ "path": "./mncast_bluetooth5.bin", "offset": 2097152},
+ 	{ "path": "./mncast_bluetooth6.bin", "offset": 2621440},
+ 	{ "path": "./mncast_bluetooth7.bin", "offset": 3145728},
+ 	{ "path": "./mncast_bluetooth8.bin", "offset": 3670016}
+      ]
+    }
+  ]
+}

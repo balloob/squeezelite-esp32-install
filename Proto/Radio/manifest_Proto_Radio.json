@@ -1,0 +1,12 @@
+{
+  "name": "Simple Radio for Muse Proto",
+  "version": "1.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "./proto_radio.bin", "offset": 0}
+      ]
+    }
+  ]
+}

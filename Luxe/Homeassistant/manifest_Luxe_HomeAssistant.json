@@ -1,0 +1,19 @@
+{
+  "name": "ESPHome for MUSE Luxe",
+  "version": "2022.12.3",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+    { "path": "./LuxeHomeAssistant1.bin", "offset": 0},
+	{ "path": "./LuxeHomeAssistant2.bin", "offset": 524288},
+ 	{ "path": "./LuxeHomeAssistant3.bin", "offset": 1048576},
+ 	{ "path": "./LuxeHomeAssistant4.bin", "offset": 1572864},
+ 	{ "path": "./LuxeHomeAssistant5.bin", "offset": 2097152},
+ 	{ "path": "./LuxeHomeAssistant6.bin", "offset": 2621440},
+ 	{ "path": "./LuxeHomeAssistant7.bin", "offset": 3145728},
+ 	{ "path": "./LuxeHomeAssistant8.bin", "offset": 3670016}
+      ]
+    }
+  ]
+}

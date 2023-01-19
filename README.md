@@ -1,5 +1,5 @@
 # Squeezelite-ESP32 Installer
 
-This is a demo installer website for [Squeezelite-ESP32](https://github.com/sle118/squeezelite-esp32).
+This the code for the Raspiaudio Ompen Source App Store  https://raspiaudio.github.io/
 
-[Visit installer website](https://paulusschoutsen.nl/squeezelite-esp32-install/)
+

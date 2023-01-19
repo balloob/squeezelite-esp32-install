@@ -1,0 +1,12 @@
+{
+  "name": "Simple Bluetooth Speaker for MUSE LUXE",
+  "version": "1.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "./luxe_bluetooth.bin", "offset": 0}
+      ]
+    }
+  ]
+}

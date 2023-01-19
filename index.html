@@ -1,119 +1,243 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Squeezelite-ESP32 installer</title>
-    <meta
-      name="description"
-      content="Easily allow users to install Squeezelite-ESP32 firmware on the web."
-    />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="color-scheme" content="dark light" />
-    <style>
-      body {
-        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Ubuntu, sans-serif;
-        padding: 0;
-        margin: 0;
-        line-height: 1.4;
-      }
-      .content {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 12px;
-      }
-      h2 {
-        margin-top: 2em;
-      }
-      h3 {
-        margin-top: 1.5em;
-      }
-      a {
-        color: #03a9f4;
-      }
-      .invisible {
-        visibility: hidden;
-      }
-      .hidden {
-        display: none;
-      }
-      esp-web-install-button[install-unsupported] {
-        visibility: inherit;
-      }
-      .content pre {
-        max-width: 100%;
-        overflow-y: scroll;
-      }
-      .footer {
-        margin-top: 24px;
-        border-top: 1px solid #ccc;
-        padding-top: 24px;
-        text-align: center;
-      }
-      .footer .initiative {
-        font-style: italic;
-        margin-top: 16px;
-      }
-      table {
-        border-spacing: 0;
-      }
-      td {
-        padding: 8px;
-        border-bottom: 1px solid #ccc;
-      }
-      .radios li {
-        list-style: none;
-        line-height: 2em;
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: #333;
-          color: #fff;
-        }
-        a {
-          color: #58a6ff;
-        }
-      }
-    </style>
-    <script type="module" src="https://unpkg.com/esp-web-tools@8.0.1/dist/web/install-button.js?module"></script>
-  </head>
-  <body>
-    <div class="content">
-      <h1>Squeezelite-ESP32 installer</h1>
-      <p>This is a prototype and not up-to-date. For latest installations, see the <a href="https://sle118.github.io/squeezelite-esp32-installer/">Squeezelite Web Installer</a>.</p>
-      <p>Select your product</p>
-      <ul class="radios">
-        <li>
-          <label><input type="radio" name="type" value="i2s" /> I2S</label>
-        </li>
-        <li>
-          <label><input type="radio" name="type" value="muse" /> Muse</label>
-        </li>
-        <li>
-          <label><input type="radio" name="type" value="muse_proto" /> Muse Proto</label>
-        </li>
-        <li>
-          <label><input type="radio" name="type" value="squeezeamp" /> SqueezeAmp</label>
-        </li>
-      </ul>
-      <p class="button-row" align="center">
-        <esp-web-install-button class="invisible"></esp-web-install-button>
-      </p>
+<head>
+  <meta charset="utf-8" />
+  <title>Squeezelite-ESP32 installer</title>
+  <meta
+  name="description"
+  content="Easily allow users to install Squeezelite-ESP32 firmware on the web."
+  />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="color-scheme" content="dark light" />
 
-      <div class="footer">
-        <a href="https://github.com/sle118/squeezelite-esp32"
-          >Squeezelite-ESP32</a
-        > &mdash;
-        Installer powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a>.
-    </div>
+  <style>
+  header{
+    background-color: #6EC1E4;
+    border-top: 1px solid #ccc;
+    padding-top: 24px;
+    text-align: center;
+
+  }
+  .logo {
+    text-align: center;
+  }
+  footer{
+    background-color: #F9CB8A;
+  }
+  body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
+}
+h2 {
+  margin-top: 2em;
+}
+
+td {
+  height: 50px;
+  vertical-align: center;
+}
+h3 {
+  margin-top: 1.5em;
+}
+a {
+  color: #03a9f4;
+}
+.invisible {
+  visibility: hidden;
+}
+.hidden {
+  display: none;
+}
+esp-web-install-button[install-unsupported] {
+  visibility: inherit;
+}
+.content pre {
+  max-width: 100%;
+  overflow-y: scroll;
+}
+.footer {
+  margin-top: 24px;
+  border-top: 1px solid #ccc;
+  padding-top: 24px;
+  text-align: center;
+}
+.footer .initiative {
+  font-style: italic;
+  margin-top: 16px;
+}
+table {
+  border-spacing:  0 15px;
+  display: table;
+
+}
+td, tr, th{
+  padding: 8px;
+  vertical-align:middle;
+
+}
+
+img{
+  width:150px;
+}
+
+
+.m{
+  grid-column: 1;
+  height: 220px;
+  width:300px;
+  text-align: center;
+}
+.s{
+  height: 200px;
+  width:300px;
+}
+
+.l{
+  width:180px;
+  height: 200px;
+
+}
+.explication{
+  width:auto;
+  height: auto;
+  padding: 20px;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+  a {
+    color: #58a6ff;
+  }
+}
+</style>
+
+
+</head>
+
+
+
+
+
+
+<body>
+<header>
+  <a href="https://raspiaudio.com/"><img src="./images/Logo_raspiaudio_V3-768x170.png" alt="logo" class="logo"></a>    </header>
+<div class="content">
+</header>
+  <h1 class="logo">RASPIAUDIO Open Source App Store<br> </h1>
+
+
+  <table align="center">
+    <tr>
+      <td>
+        <label>Choose a device:</label>
+      </td>
+      <td>
+        <label>Choose an application:</label>
+      </td>
+    </tr>
+    <tr>
+      <td >
+        <div class="device-form">
+          <img src="Luxe/Luxe.png" alt="Luxe">
+          <input type="radio" name="device" value="Luxe" checked onclick="loadContent()"> Luxe
+        </div>
+        <div class="device-form">
+          <img src="MnCast/MnCast.png" alt="MnCast">
+          <input type="radio" name="device" value="MnCast" onclick="loadContent()"> MnCast
+        </div>
+        <div class="device-form">
+          <img src="Proto/Proto.png" alt="Proto">
+          <input type="radio" name="device" value="Proto" onclick="loadContent()"> Proto
+        </div>
+      </td>
+      <td>
+        <div class="device-form">
+          <input type="radio" name="application" value="Bluetooth" onclick="loadContent()"> Bluetooth
+        </div>
+        <div class="device-form">
+          <input type="radio" name="application" value="Radio" onclick="loadContent()"> Radio
+        </div>
+        <div class="device-form">
+          <input type="radio" name="application" value="Squeezelite" onclick="loadContent()"> Squeezelite
+        </div>
+        <div class="device-form">
+          <input type="radio" name="application" value="HomeAssistant" onclick="loadContent()"> Home Assistant
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <div id="descriptif"></div>
+
+  <div id="selection">
+    Selected Device : <span id="device"></span><br>
+    Selected Application : <span id="application"></span>
+  </div>
+
+  <p class="button-row" align="center">
+    <esp-web-install-button class="upload-button"></esp-web-install-button>
+
+
+
+
+    <script type="module" src="https://unpkg.com/esp-web-tools@9.1.1/dist/web/install-button.js?module"></script>
+
     <script>
-      document.querySelectorAll('input[name="type"]').forEach(radio =>
-        radio.addEventListener("change", () => {
+
+    function loadContent() {
+      var device = document.querySelector('input[name = "device"]:checked').value;
+      var application = document.querySelector('input[name = "application"]:checked').value;
+
+      document.getElementById("device").innerHTML = device;
+      document.getElementById("application").innerHTML = application;
+
+      fetch(`./${device}/${application}/${application}.html`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        } else {
           const button = document.querySelector('esp-web-install-button');
-          button.manifest = `./manifest_${radio.value}.json`;
+          button.manifest = `./${device}/${application}/manifest_${device}_${application}.json`;
           button.classList.remove('invisible');
+          button.style.visibility = "visible";
+          return response.text()
         }
-      ));
+      })
+      .then(data => {
+        document.getElementById('descriptif').innerHTML = data;
+        // Enlever le bouton upload-button si le fichier n'est pas trouvé
+
+
+      })
+      .catch(error => {
+        console.log(error);
+        const button = document.querySelector('esp-web-install-button');
+        document.getElementById('descriptif').innerHTML = 'This project as not yet been ported for this device please help us :)';
+
+        button.style.visibility = "hidden";
+      });
+    }
     </script>
+
+    <footer>
+
+    </footer>
   </body>
-</html>
+
+  </html>

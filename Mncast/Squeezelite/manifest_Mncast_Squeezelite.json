@@ -1,0 +1,12 @@
+{
+  "name": "Squeezelite Muse Mn Cast",
+  "version": "Muse-16 2.1254",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "./mncast_squeezelite.bin", "offset": 0}
+      ]
+    }
+  ]
+}

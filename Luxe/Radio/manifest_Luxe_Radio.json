@@ -1,0 +1,12 @@
+{
+  "name": "Simple Radio for Muse Luxe",
+  "version": "1.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "./luxe_radio.bin", "offset": 0}
+      ]
+    }
+  ]
+}

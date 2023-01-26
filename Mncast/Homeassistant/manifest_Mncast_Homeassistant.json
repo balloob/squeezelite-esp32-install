@@ -1,5 +1,5 @@
 {
-  "name": "ESPHome for MUSE Luxe",
+  "name": "Home Assistant for MUSE Mn Cast",
   "version": "2022.12.3",
   "builds": [
     {

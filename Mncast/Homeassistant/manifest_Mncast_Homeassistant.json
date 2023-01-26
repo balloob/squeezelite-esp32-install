@@ -1,0 +1,19 @@
+{
+  "name": "ESPHome for MUSE Luxe",
+  "version": "2022.12.3",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+	{ "path": "./part1.bin", "offset": 0},
+	{ "path": "./part2.bin", "offset": 524288},
+ 	{ "path": "./part3.bin", "offset": 1048576},
+ 	{ "path": "./part4.bin", "offset": 1572864},
+ 	{ "path": "./part5.bin", "offset": 2097152},
+ 	{ "path": "./part6.bin", "offset": 2621440},
+ 	{ "path": "./part7.bin", "offset": 3145728},
+ 	{ "path": "./part8.bin", "offset": 3670016}
+      ]
+    }
+  ]
+}
